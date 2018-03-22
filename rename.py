@@ -11,7 +11,7 @@ dst_path="../cry/"
 
 
 
-def file_name(src_path,dst_path):
+def file_rename(src_path,dst_path):
 	for root,dirs,files in os.walk(src_path):
 		k = 0
 		for single_file in files:
@@ -21,5 +21,5 @@ def file_name(src_path,dst_path):
 			os.system("cp -rf %s  %s "%(src_file,dst_file))
 
 
-file_name(src_path,dst_path)
+file_rename(src_path,dst_path)
 #file_name("../data_unnamed/")
